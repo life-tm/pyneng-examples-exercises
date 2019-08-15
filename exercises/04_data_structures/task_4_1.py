@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+
 '''
 Задание 4.1
 
@@ -10,3 +11,6 @@
 '''
 
 nat = 'ip nat inside source list ACL interface FastEthernet0/1 overload'
+
+In : nat.replace('Fast', 'Gigabit')                                                                                                                                                        
+Out: 'ip nat inside source list ACL interface GigabitEthernet0/1 overload'

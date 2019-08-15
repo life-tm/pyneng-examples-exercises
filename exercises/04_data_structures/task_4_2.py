@@ -9,3 +9,6 @@
 '''
 
 mac = 'AAAA:BBBB:CCCC'
+
+In : mac.replace('AAAA:BBBB:CCCC', 'AAAA.BBBB.CCCC')                                                                                                                                       
+Out: 'AAAA.BBBB.CCCC'
