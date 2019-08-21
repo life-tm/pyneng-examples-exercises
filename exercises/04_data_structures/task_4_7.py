@@ -10,3 +10,8 @@
 '''
 
 mac = 'AAAA:BBBB:CCCC'
+
+mac = mac.replace('AAAA:BBBB:CCCC', 'AAAABBBBCCCC') 
+mac = int(mac, 16)
+mac = '{:0b}'.format(mac)
+mac
