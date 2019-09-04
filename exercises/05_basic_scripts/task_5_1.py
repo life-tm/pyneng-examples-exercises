@@ -46,3 +46,6 @@ london_co = {
         'routing': True
     }
 }
+
+common_key = input("Введите имя устройства: ")
+print(london_co[common_key])
