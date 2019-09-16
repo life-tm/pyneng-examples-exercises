@@ -19,3 +19,10 @@ Mask:
 
 Ограничение: Все задания надо выполнять используя только пройденные темы.
 '''
+
+network = input('Введите IP сеть в формате "10.0.0.1/24" ')
+commands = network.split('/')
+Network = commands[0]
+mask = commands[1]
+print('Network:',Network)
+print('Mask:',mask)
