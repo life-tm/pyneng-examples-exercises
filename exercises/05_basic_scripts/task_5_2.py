@@ -24,5 +24,9 @@ network = input('Введите IP сеть в формате "10.0.0.1/24" ')
 commands = network.split('/')
 Network = commands[0]
 mask = commands[1]
-print('Network:',Network)
-print('Mask:',mask)
+print('Network:'+'\n'+Network)
+#r = int('8''2''4''4')
+#print(type(r))
+p = '{0:<8} {1:<8} {2:<8} {3:<8}\n{0:08b} {1:08b} {2:08b} {3:08b}'.format(10,1,10,1)
+print(p)
+print('Mask:'+'\n'+'/'+mask)
