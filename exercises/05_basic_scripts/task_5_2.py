@@ -20,13 +20,16 @@ Mask:
 Ограничение: Все задания надо выполнять используя только пройденные темы.
 '''
 
-network = input('Введите IP сеть в формате "10.0.0.1/24" ')
+network = input('Введите IP сеть в формате: 10.1.1.0/24''\n')
 commands = network.split('/')
 Network = commands[0]
 mask = commands[1]
-print('Network:'+'\n'+Network)
-#r = int('8''2''4''4')
-#print(type(r))
-p = '{0:<8} {1:<8} {2:<8} {3:<8}\n{0:08b} {1:08b} {2:08b} {3:08b}'.format(10,1,10,1)
-print(p)
+print('\n' + 'Network:')
+Net=Network.split('.')
+a = int(Net[0])
+b = int(Net[1])
+c = int(Net[2])
+d = int(Net[3])
+result_ip = '{0:<8} {1:<8} {2:<8} {3:<8}\n{0:08b} {1:08b} {2:08b} {3:08b}'.format(a,b,c,d)
+print(result_ip+'\n')
 print('Mask:'+'\n'+'/'+mask)
