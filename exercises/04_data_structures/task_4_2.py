@@ -10,5 +10,5 @@
 
 mac = 'AAAA:BBBB:CCCC'
 
-In : mac.replace('AAAA:BBBB:CCCC', 'AAAA.BBBB.CCCC')                                                                                                                                       
+In : mac.replace(':', '.')                                                                                                                                       
 Out: 'AAAA.BBBB.CCCC'

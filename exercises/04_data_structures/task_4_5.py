@@ -20,6 +20,7 @@ command1 = command1[-1].split(',')
 command2 = command2[-1].split(',')
 command1 = set(command1)
 command2 = set(command2)
-command3 = command1 | command2
+command3 = command1 & command2
 command3 = list(command3)
-command3[::2]
+command3.sort()
+print(command3)
