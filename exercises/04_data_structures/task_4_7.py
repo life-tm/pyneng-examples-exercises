@@ -11,7 +11,12 @@
 
 mac = 'AAAA:BBBB:CCCC'
 
-mac = mac.replace('AAAA:BBBB:CCCC', 'AAAABBBBCCCC') 
+mac = mac.replace(':', '') 
 mac = int(mac, 16)
 mac = '{:0b}'.format(mac)
 mac
+или так:
+mac = 'AAAA:BBBB:CCCC'
+mac = mac.replace(':', '') 
+mac = int(mac, 16)
+bin(hex)[2:]
