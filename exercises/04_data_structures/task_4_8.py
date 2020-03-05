@@ -20,8 +20,7 @@
 
 ip = '192.168.3.1'
 
-ip = ip.replace('192.168.3.1', '192 168 3 1')
-ip = ip.split()
+ip = ip.split('.')
 ip_0 = int(ip[0])
 ip_1 = int(ip[1])
 ip_2 = int(ip[2])
