@@ -19,4 +19,4 @@ mac
 mac = 'AAAA:BBBB:CCCC'
 mac = mac.replace(':', '') 
 mac = int(mac, 16)
-bin(hex)[2:]
+bin(mac)[2:]
